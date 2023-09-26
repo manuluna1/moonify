@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonify Plataforma Streaming Música</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="header__a">
+            <img src="logo-moonify-letras.png" alt="logo-moonify">
+        </a>
+        <nav>
+            <button>Sobre Moonify</button>
+            <button>Ayuda</button>
+            <button>Iniciar Sesión</button>
+            <a href="">Regístrate</a>
+        </nav>
+        <img id="icono-menu" src="icono-menu.png" alt="icono-menu" onclick="abrirMenuResponsive()">
+    </header>
+    <main>
+        <div class="div-header-responsive" id="div-header-responsive">
+            <button>Sobre Moonify</button>
+            <button>Ayuda</button>
+            <button>Iniciar Sesión</button>
+            <a href="">Regístrate</a>
+            <a href="" id="a-login-responsive">Iniciar Sesión</a>
+        </div>
+
+        <section class="main-content" id="main-content">
+            <h1>NOW: Justo cuando quieres escuchar.</h1>
+            <p>Disfruta tu música favorita en el momento que quieras.</p>
+            <a href="">Regístrate</a>
+            <a href="" id="a-login">Iniciar Sesión</a>
+        </section>
+        <section class="secondary-content">
+            <div class="article-info">
+                <article id="article-rising">
+                    <img src="moonify-rising.png" alt="">
+                    <div class="rising-content">
+                        <h3>Nuevo programa MOONIFY RISING</h3>
+                        <p>Descubre nuevas canciones, estrenos recientes o artistas poco reconocidos.</p>
+                        <a href=""> > Más información</a>
+                    </div>
+                </article>
+
+                <article id="article-music">
+                    <img src="" alt="">
+                    <div class="music-content">
+                        <h3>Más de 100 millones de canciones</h3>
+                        <p>Escucha más de 100 millones de canciones sin anuncios ni cortes.<br>
+                            Lo que quieras. Cuando quieras.</p>
+                        <a href=""> > Más información</a>
+                    </div>
+                </article>
+
+            </div>
+            <div class="article-sound" id="article-sound">
+                <div class="sound-text">
+                    <h1>Eleva tu Sonido</h1>
+                    <p>Con nuestra experiencia de audio sin pérdidas y de alta fidelidad, escucha música como nunca antes la habías escuchado. 
+                    Sin concesiones. Sonido puro.</p>
+                </div>
+                <div class="sound-cards">
+                    <article class="card-sound">
+                        <video src="video-normal-bucle.mp4" widht="100px" height="200px"  muted loop></video>
+                        <h1>Normal</h1>
+                        <div class="subtext-sound">
+                            <button>Normal</button>
+                            <h5>Calidad AAC</h5>
+                            <p>160 Kbps</p>
+                        </div>
+                        <p>Fácil acceso y con el equilibrio perfecto entre uso de datos y fidelidad de sonido.</p>
+                    </article>
+                    <article class="card-sound">
+                        <video src="video-hd.mp4" widht="100px" height="200px"  muted loop></video>
+                        <h1>HiFi</h1>
+                        <div class="subtext-sound">
+                            <button>HiFi</button>
+                            <h5>Calidad CD sin pérdida</h5>
+                            <p>1411 Kbps</p>
+                        </div>
+                        <p>Te permite escuchar música utilizando el audio sin pérdida FLAC para crear una experiencia musical nítida y definida.</p>
+                    </article>
+                    <article class="card-sound" id="card-sound">
+                        <video src="video-master-bucle.mp4" id="video" widht="100%" height="200px" muted loop></video>
+                        <h1>Master</h1>
+                        <div class="subtext-sound">
+                            <button>Master</button>
+                            <h5>Calidad de alta resolución</h5>
+                            <p>5000 Kbps</p>
+                        </div>
+                        <p>Autentificado y sin interrupciones, con la resolución más alta posible: 
+                            sonido impecable como en el estudio de masterización como el artista quería.</p>
+                    </article>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+</body>
+</html>
